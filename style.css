@@ -22,7 +22,7 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
-  background-color: red;
+  /* background-color: red; */
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -31,8 +31,15 @@ body {
   /* height: 80px; */
 }
 
+/* genişlik olmazsa floatlar çalışmaz. Akışa geçtiği için */
+.main-header h1{
+  width: 600px;
+  float: left;
+}
+
 nav {
   font-size: 18px;
+  width: 400px;
   /* text-align: center; */
 }
 
@@ -269,6 +276,16 @@ nav p {
 
 /* FLOATS */
 
+
+.main-header{
+  float:left;
+}
+
+nav{
+float:right;
+}
+
+
 .author-img{
   float:left;
   margin-bottom: 20px;
@@ -295,12 +312,20 @@ nav{
 
 article{
 
+  /* background-color: green; */
+  width: 825px ;
+  float:left;
 }
 
 aside{
+  /* background-color: red; */
+  width:300px ;
+  float: right;
 
 }
 
 footer{
 
+  /* background-color: yellow; */
+  clear:both;
 }
